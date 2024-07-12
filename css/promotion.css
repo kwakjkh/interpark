@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* 포로모션 */
+.promotion .inner{
+
+}
+.promotion .section-top{
+    display: none;
+}
+.sw-promotion a{
+    display: inline-block;
+    border-radius: 13px;
+    overflow: hidden;
+}
+.sw-promotion a img{
+    width: 100%;
+    height: auto;
+}
