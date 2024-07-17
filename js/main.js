@@ -45,10 +45,10 @@ window.onload = function () {
       900: {
         spaceBetween: 32,
         slidesPerView: 4,
+        slidesPerGroup: 3,
         grid: {
           rows: 1,
         },
-        slidesPerGroup: 3,
       },
       1024: {
         spaceBetween: 32,
@@ -80,7 +80,7 @@ window.onload = function () {
     slidesPerView: 1.2,
     spaceBetween: 10,
     grid: {
-      rows:1,
+      rows:3,
       fill: "row",
     },
     breakpoints: {
@@ -113,5 +113,31 @@ window.onload = function () {
       nextEl: ".tour .sw-next",
       prevEl: ".tour .sw-prev",
     },
-  })
+  });
+  // 티켓 swiper
+  const swTicket = new Swiper(".sw-ticket", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    grid:{
+      rows:1,
+    },
+    navigation:{
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
+    },
+    loop:true,
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+      },}
+  }) 
 };
