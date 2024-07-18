@@ -72,8 +72,15 @@
         width: 20px;
         background-color: red;
     }
+    .live .section-slide{
+        height: 400px;  
+    }
 }
-
+@media screen and (max-width:650px){
+    .live .section-slide{
+        height: 350px;  
+      }
+}
 @media screen and (max-width:480px){
 .promotion .inner{
     width:80%;

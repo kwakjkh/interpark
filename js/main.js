@@ -140,4 +140,24 @@ window.onload = function () {
         slidesPerView: 4,
       },}
   }) 
+  // live swiper
+  const swLive = new Swiper(".sw-live" , {
+    slidesPerView:2,
+    spaceBetween: 27,
+    breakpoints:{
+      500:{
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      1024:{
+        spaceBetween: 27,
+        slidesPerView: 4,
+      }
+    },
+    navigation: {
+      nextEl: ".live .sw-next",
+      prevEl: ".live .sw-prev",
+    },
+    loop:true,
+  })
 };
