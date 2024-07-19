@@ -71,7 +71,7 @@ window.onload = function () {
       nextEl: ".shopping .sw-next",
       prevEl: ".shopping .sw-prev",
     },
-    loop:true,
+    loop: true,
   });
 
   // 투어의 스와이퍼 기능적용
@@ -80,7 +80,7 @@ window.onload = function () {
     slidesPerView: 1.2,
     spaceBetween: 10,
     grid: {
-      rows:3,
+      rows: 3,
       fill: "row",
     },
     breakpoints: {
@@ -118,14 +118,14 @@ window.onload = function () {
   const swTicket = new Swiper(".sw-ticket", {
     slidesPerView: 2,
     spaceBetween: 10,
-    grid:{
-      rows:1,
+    grid: {
+      rows: 1,
     },
-    navigation:{
+    navigation: {
       nextEl: ".ticket .sw-next",
       prevEl: ".ticket .sw-prev",
     },
-    loop:true,
+    loop: true,
     breakpoints: {
       480: {
         spaceBetween: 32,
@@ -138,26 +138,38 @@ window.onload = function () {
       1280: {
         spaceBetween: 26,
         slidesPerView: 4,
-      },}
-  }) 
+      },
+    },
+  });
   // live swiper
-  const swLive = new Swiper(".sw-live" , {
-    slidesPerView:2,
+  const swLive = new Swiper(".sw-live", {
+    slidesPerView: 2,
     spaceBetween: 27,
-    breakpoints:{
-      500:{
+    breakpoints: {
+      500: {
         spaceBetween: 32,
         slidesPerView: 3,
       },
-      1024:{
+      1024: {
         spaceBetween: 27,
         slidesPerView: 4,
-      }
+      },
     },
     navigation: {
       nextEl: ".live .sw-next",
       prevEl: ".live .sw-prev",
     },
-    loop:true,
-  })
+    loop: true,
+  });
+  const swBook = new Swiper(".sw-books", {
+    slidesPerView: 5,
+    spaceBetween: 25,
+    grid: {
+      rows: 1,
+    },
+    navigation: {
+      nextEl: ".book .sw-next",
+      prevEl: ".book .sw-prev",
+    },
+  });
 };

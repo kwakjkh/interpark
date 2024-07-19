@@ -75,6 +75,9 @@
     .live .section-slide{
         height: 400px;  
     }
+    .live-info-time{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:650px){
     .live .section-slide{
@@ -82,7 +85,19 @@
       }
 }
 @media screen and (max-width:480px){
-.promotion .inner{
-    width:80%;
+.inner{
+    max-width: 360px;
+    padding: 0 20px;
+}
+.search{
+    width: 310px;
+    padding: 0;
+    top: 77px;
+}
+.header-down{
+    display: none;
+}
+.header .inner{
+    height: 150px;
 }
 }
