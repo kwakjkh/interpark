@@ -162,14 +162,61 @@ window.onload = function () {
     loop: true,
   });
   const swBook = new Swiper(".sw-books", {
-    slidesPerView: 5,
-    spaceBetween: 25,
+    slidesPerView:2,
+    spaceBetween:19,
     grid: {
-      rows: 1,
+      rows:5,
+      fill: "row",
+    },
+    breakpoints:{
+      480:{
+        slidesPerView:2,
+        spaceBetween:20,
+      },
+      768:{
+        slidesPerView:3,
+        spaceBetween:20,
+      },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+      },
     },
     navigation: {
       nextEl: ".book .sw-next",
       prevEl: ".book .sw-prev",
     },
   });
+  const swEvent = new Swiper(".sw-event", {
+    slidesPerView: 2,
+    spaceBetween: 25,
+    breakpoints:{
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1280:{
+        slidesPerView: 4,
+        spaceBetween: 30,
+        
+      }
+    },
+    navigation: {
+      nextEl: ".live .sw-next",
+      prevEl: ".live .sw-prev",
+    },
+    loop: true,
+  })
 };
