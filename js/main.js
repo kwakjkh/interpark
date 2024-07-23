@@ -1,4 +1,16 @@
 window.onload = function () {
+  // topbt기능
+  const topBtn = document.querySelector("#gotop");
+  topBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (window.scrollY !== 0) {
+      // 현재 스크롤 위치가 0이 아니면 top으로 스크롤
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
   // 상단의 마이페이지리스트 기능
   const mypageBt = document.querySelector(".mypage-bt");
   const mypageList = document.querySelector(".mypage-list");
@@ -162,20 +174,20 @@ window.onload = function () {
     loop: true,
   });
   const swBook = new Swiper(".sw-books", {
-    slidesPerView:2,
-    spaceBetween:19,
+    slidesPerView: 2,
+    spaceBetween: 19,
     grid: {
-      rows:5,
+      rows: 5,
       fill: "row",
     },
-    breakpoints:{
-      480:{
-        slidesPerView:2,
-        spaceBetween:20,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
-      768:{
-        slidesPerView:3,
-        spaceBetween:20,
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
       1024: {
         slidesPerView: 4,
@@ -199,24 +211,23 @@ window.onload = function () {
       prevEl: ".book .sw-prev",
     },
   });
-  const swEvent = new Swiper(".sw-event", {
+  const swEvent = new Swiper(".sw-events", {
     slidesPerView: 2,
     spaceBetween: 25,
-    breakpoints:{
-      768:{
+    breakpoints: {
+      768: {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-      1280:{
+      1280: {
         slidesPerView: 4,
         spaceBetween: 30,
-        
-      }
+      },
     },
     navigation: {
-      nextEl: ".live .sw-next",
-      prevEl: ".live .sw-prev",
+      nextEl: ".event .sw-next",
+      prevEl: ".evnet .sw-prev",
     },
     loop: true,
-  })
+  });
 };

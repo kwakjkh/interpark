@@ -78,11 +78,26 @@
     .live-info-time{
         font-size: 30px;
     }
+    .event  .inner{
+        border-bottom: none;
+    }
+    .quick-menu{
+        display: block;
+    }
+    .footer-menu, .footer-main{
+        display: none;
+    }
+    .footer-mobile{
+        display: block;
+    }
 }
 @media screen and (max-width:650px){
     .live .section-slide{
         height: 350px;  
       }
+      .sw-events .swiper-slide{
+        height: 250px;
+    }
 }
 @media screen and (max-width:480px){
 .inner{
@@ -100,4 +115,5 @@
 .header .inner{
     height: 150px;
 }
+
 }
